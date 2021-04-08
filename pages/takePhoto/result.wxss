@@ -1,0 +1,107 @@
+page{
+  background: #EBEBEB;
+  width: 100%;
+  height: 100%;
+}
+.imgs{
+  display: block;
+  margin: 0 auto 0;
+  width: 70%;
+}
+.loading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin-top: -100rpx;
+}
+.loading view{
+  text-align: center;
+  font-size: 40rpx;
+  color: #333;
+  margin-top: 100rpx;
+}
+.ress{
+  background: #fff;
+  height: 100%;
+}
+.ress .tit{
+  text-align: center;
+  font-size: 50rpx;
+  color: #333;
+  padding: 100rpx 0;
+  margin: 0 auto;
+}
+.res0{
+  color: #FF0100;
+}
+.res1{
+  color: yellow;
+}
+.res2{
+  color: #70AD47;
+}
+.res3{
+  color: #385723;
+}
+.resnum{
+  font-size: 140rpx;
+  text-align: center;
+  font-weight: bold;
+}
+.ress .resimg{
+  width: 30%;
+  margin: 0 auto;
+}
+.ress .resimg image{
+  width:100%
+}
+.restran{
+  transform:rotate(180deg);
+  -ms-transform:rotate(180deg); /* Internet Explorer */
+  -moz-transform:rotate(180deg); /* Firefox */
+  -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+  -o-transform:rotate(180deg); /* Opera */
+}
+.yzlist{
+  display: flex;
+  justify-content: center;
+  padding: 100rpx 0 90rpx;
+}
+.yzlist>view>view{
+  width: 100rpx;
+  height: 30rpx;
+  margin: 0 auto;
+}
+.yzlist>view{
+  text-align: center;
+}
+.yzlist>.yzjg1>view{
+  background: #385723;
+}
+.yzlist>.yzjg2>view{
+  background: #70AD47;
+}
+.yzlist>.yzjg3>view{
+  background: #FF0100;
+}
+.yzlist>.yzjg4>view{
+  background: yellow;
+}
+.btns{
+  width: 70%;
+  margin: 60rpx auto 0;
+  text-align: center;
+  background: #409eff;
+  font-size: 32rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  color: #fff;
+}
+.tishi{
+  text-align: center;
+  font-size: 26rpx;
+  color: #999;
+  padding: 100rpx 0 90rpx;
+}

@@ -1,0 +1,32 @@
+<!--pages/takePhoto/result.wxml-->
+<view class="loading" wx:if="{{isload}}">
+  <image class="imgs" mode="widthFix" src="../../assets/imgs/loading.gif"></image>
+  <view>验证中...</view>
+</view>
+<view wx:if="{{!isload}}" class="ress">
+  <view class="tit">验证结果</view>
+  <view wx:if="{{rescode==0}}" class="res0 resnum">{{point}}</view>
+  <view wx:if="{{rescode==1}}" class="res1 resnum">{{point}}</view>
+  <view wx:if="{{rescode==2}}" class="res2 resnum">{{point}}</view>
+  <view wx:if="{{rescode==3}}" class="res3 resnum">{{point}}</view>
+  <view wx:if="{{rescode<=-1&&rescode>=-5}}" class="resimg restran">
+    <image src="../../assets/imgs/img3.png" mode="widthFix"></image>
+  </view>
+  <view class="yzlist" wx:if="{{rescode>=0}}">
+    <view class="yzjg1">
+      <view></view>
+    </view>
+    <view class="yzjg2">
+      <view></view>
+    </view>
+    <view class="yzjg4">
+      <view></view>
+    </view>
+    <view class="yzjg3">
+      <view></view>
+    </view>
+  </view>
+  <view wx:if="{{rescode<=-1&&rescode>=-5}}" class="tishi">提示：采集的图像信息不满足质量要求</view>
+  <view wx:if="{{!isload}}" class="btns" bindtap="tolink">{{rescode>-1?'再次验证':'重新查验'}}</view>
+</view>
+

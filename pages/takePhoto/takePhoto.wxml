@@ -1,0 +1,24 @@
+<!--pages/takePhoto/takePhoto.wxml-->
+<view style='width:{{width}}rpx; height:{{height}}rpx; overflow:hidden;'>
+    <camera device - position="back" flash = "on" style="width:{{width}}rpx; height:{{height}}rpx;">
+      <!-- <cover-image src='{{logo}}' class= 'takephoto' bindtap='takePhoto' style='width:{{width>height-width?(height-width)*0.6:width*0.6}}px; height:{{width>height-width?(height-width)*0.6:width*0.6}}px; position:absolute; bottom:0px; left:0px;'> </cover-image> -->
+      <cover-view class="backtop">
+        <cover-view class="tabs">
+          <cover-view class="{{isActive==1?'active':''}}" bindtap='actab' data-index="1">二维码</cover-view>
+          <cover-view class="{{isActive==2?'active':''}}" bindtap='actab' data-index="2">条形码</cover-view>
+          <cover-view class="{{isActive==3?'active':''}}" bindtap='actab' data-index="3">logo</cover-view>
+          <cover-view class="{{isActive==4?'active':''}}" bindtap='actab' data-index="4">双ID二维码</cover-view>
+        </cover-view>
+        <cover-view class="textp">请将验证对象放置于验证框中，</cover-view>
+        <cover-view class="text2">尽量充满验证框，在光线充足的条件下验证</cover-view>
+      </cover-view>
+      <cover-view class="{{isActive==2?'backcont2':isActive==4?'backcont4':'backcont1'}}">
+        <cover-view class="{{isActive==2?'contlf2':isActive==4?'contlf4':'contlf1'}}"></cover-view>
+        <cover-view class="kuang {{isActive==2?'k2':isActive==4?'k4':'k1'}}"></cover-view>
+        <cover-view class="{{isActive==2?'contlf2':isActive==4?'contlf4':'contlf1'}}"></cover-view>
+      </cover-view>
+      <cover-view class="backbottom" style="height:{{btnhg}}rpx;">
+        <button class="takephoto" bindtap='takePhoto' disabled="{{isbtn}}">提交验证</button>
+      </cover-view>
+    </camera>
+</view> 

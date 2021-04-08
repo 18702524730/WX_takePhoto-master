@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/takePhoto/takePhoto",
+    "pages/takePhoto/result",
+    "pages/takePhoto/upload"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "潜影魔镜",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#fff",
+    "backgroundColorTop": "#fff",
+    "backgroundColorBottom": "#fff"
+  },
+  "sitemapLocation": "sitemap.json"
+}

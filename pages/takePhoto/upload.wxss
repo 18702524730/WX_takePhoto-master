@@ -1,0 +1,6 @@
+/* pages/takePhoto/upload.wxss */
+page{
+  overflow:visible;
+  background: rgba(0,0,0,.5);
+  opacity: 0;
+}
